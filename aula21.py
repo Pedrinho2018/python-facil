@@ -13,15 +13,16 @@
 # print(10>5 and 5>10 and 10==10) #False       
 
 
-entrada = input("[e]ntrar [s]air: ")
+"""entrada = input("[e]ntrar [s]air: ")
 senha = input("Senha: ").strip()
 senha_permitida = '1234'
 
 if entrada == 'e' and senha == senha_permitida:
     print("Você entrou no sistema")
-elif entrada == 'e' and senha != senha_permitida:
-    print("Senha incorreta")
-elif entrada == 's':
-    print("Você saiu do sistema")
+
 else:
-    print("Entrada inválida")   
+print("Entrada inválida")  """
+
+#avaliaçao de curto circuito
+senha = input("Senha: ") or 'Sem senha'
+print(senha)
