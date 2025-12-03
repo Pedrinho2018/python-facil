@@ -16,9 +16,16 @@ class ave(animal):
 class morcego(mamimfero, ave):
     def fazer_som(self):
         return f"{self.nome} emite um som de morcego."
+    
+class cachorro(mamimfero):
+    def fazer_som(self):
+        return f"{self.nome} late."
 
 morcego1 = morcego("Morceguinho")
 print(morcego1.fazer_som())        # Saída: Morceguinho
 
 morcego2 = morcego("Batinho")
 print(morcego2.voar())  
+
+print('nome do morcego:', morcego1.nome)
+print("morcego emite som:", morcego1.fazer_som())
